@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+
+    <button class="openBtn" onclick="openSearch()" style="height: 50px;">Open Search Box</button>
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form onclick="tab1_To_tab2();">
+            
+
+
+
+
+
+
+            <div class="center">
+                <input type="text" id="myInput" onkeyup="mysrhFunction()" autocomplete="off" placeholder="Search for food items.." title="Type in a name">
+            
+
+                <div class="tab tab-btn" style="margin-top: 50px;display: none;">
+                    <button style="width: 345px;border-radius: 15px;" onclick="tab1_To_tab2();">Add</button>
+                </div>
+                
+                <table id="table1" class="table table-bordered table-hover table-condensed">
+                    <thead><tr><th title="Field #1">Name</th>
+                    <th title="Field #2">Catogory</th>
+                    <th title="Field #3">Quantity</th>
+                    <th title="Field #4">Calories</th>
+                    <th title="Field #5">Select</th>
+                    </tr></thead>
+                    <tbody><tr>
+                    <td data-label="Name">Acai</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 oz. (28.35 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Apple</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 apple (182 g)</td>
+                    <td data-label="Calories">95 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Applesauce</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (246 g)</td>
+                    <td data-label="Calories">167 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Apricot</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 apricot (35 g)</td>
+                    <td data-label="Calories">17 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Avocado</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 avocado (200 g)</td>
+                    <td data-label="Calories">320 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Banana</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 banana (125 g)</td>
+                    <td data-label="Calories">111 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Blackberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (144 g)</td>
+                    <td data-label="Calories">62 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Blood Oranges</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 serving (140 g)</td>
+                    <td data-label="Calories">70 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Blueberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (148 g)</td>
+                    <td data-label="Calories">84 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cantaloupe</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 wedge (69 g)</td>
+                    <td data-label="Calories">23 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cherries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cherry (8 g)</td>
+                    <td data-label="Calories">4 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Clementine</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 clementine (74 g)</td>
+                    <td data-label="Calories">35 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cranberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (100 g)</td>
+                    <td data-label="Calories">46 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Currants</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (112 g)</td>
+                    <td data-label="Calories">63 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Custard Apple</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 custard apple (135 g)</td>
+                    <td data-label="Calories">136 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Dates</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 date (7.1 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Figs</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 fig (50 g)</td>
+                    <td data-label="Calories">37 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Fruit salad</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (249 g)</td>
+                    <td data-label="Calories">125 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Grapes</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (151 g)</td>
+                    <td data-label="Calories">104 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Greengage</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 fruit (5 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Guava</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 guava (55 g)</td>
+                    <td data-label="Calories">37 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Jackfruit</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (151 g)</td>
+                    <td data-label="Calories">143 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Jujube</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 oz. (28.35 g)</td>
+                    <td data-label="Calories">22 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Kiwi</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 liwi (183 g)</td>
+                    <td data-label="Calories">112 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lemon</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 lemon (58 g)</td>
+                    <td data-label="Calories">17 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lime</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 lime (67 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lychees</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 lychee (10 g)</td>
+                    <td data-label="Calories">7 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mandarin Oranges</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 mandarin orange (88 g)</td>
+                    <td data-label="Calories">47 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mango</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 mango (336 g)</td>
+                    <td data-label="Calories">202 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Minneola</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 minneola (109 g)</td>
+                    <td data-label="Calories">70 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mulberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (140 g)</td>
+                    <td data-label="Calories">60 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Nectarine</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 nectarine (150 g)</td>
+                    <td data-label="Calories">66 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Olives</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 olive (2.7 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Orange</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 orange (131 g)</td>
+                    <td data-label="Calories">62 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Papaya</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 fruit (500 g)</td>
+                    <td data-label="Calories">215 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Passion Fruit</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 passoin fruit (18 g)</td>
+                    <td data-label="Calories">17 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Peach</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 peach (150 g)</td>
+                    <td data-label="Calories">59 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pear</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 pear (178 g)</td>
+                    <td data-label="Calories">101 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Persimmon</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 fruit (25 g)</td>
+                    <td data-label="Calories">32 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Physalis</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 berry (5 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pineapple</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 pineapple (905 g)</td>
+                    <td data-label="Calories">453 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Plantains</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 plantain (179 g)</td>
+                    <td data-label="Calories">218 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Plum</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 plum (66 g)</td>
+                    <td data-label="Calories">30 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pomegranate</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 pomegranate (282 g)</td>
+                    <td data-label="Calories">234 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Quince</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 quince (92 g)</td>
+                    <td data-label="Calories">52 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Raisins</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (145 g)</td>
+                    <td data-label="Calories">434 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Rambutan</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 rambutan (9 g)</td>
+                    <td data-label="Calories">7 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Raspberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (123 g)</td>
+                    <td data-label="Calories">64 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Rhubarb</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 stalk (51 g)</td>
+                    <td data-label="Calories">11 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Starfruit</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 star fruit (91 g)</td>
+                    <td data-label="Calories">28 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Strawberries</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 cup (152 g)</td>
+                    <td data-label="Calories">49 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tamarind</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 tamarind (2 g)</td>
+                    <td data-label="Calories">5 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tangerine</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 tangerine (88 g)</td>
+                    <td data-label="Calories">47 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Watermelon</td>
+                    <td data-label="Catogory">Fruit</td>
+                    <td data-label="Quantity">1 wedge (286 g)</td>
+                    <td data-label="Calories">86 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Artichoke</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 artichoke (128 g)</td>
+                    <td data-label="Calories">60 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Arugula</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 leaf (2 g)</td>
+                    <td data-label="Calories">1 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Asparagus</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 spear (12 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Aubergine</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 aubergine (458 g)</td>
+                    <td data-label="Calories">115 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beetroot</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 beet (82 g)</td>
+                    <td data-label="Calories">35 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Bell Pepper</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 pepper (73 g)</td>
+                    <td data-label="Calories">15 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Black Olives</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 olive (2.7 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Broccoli</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 bunch (608 g)</td>
+                    <td data-label="Calories">207 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Brussels Sprouts</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 sprout (19 g)</td>
+                    <td data-label="Calories">8 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cabbage</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 head (908 g)</td>
+                    <td data-label="Calories">227 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Capsicum</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 pepper (45 g)</td>
+                    <td data-label="Calories">12 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Carrot</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 carrot (61 g)</td>
+                    <td data-label="Calories">25 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cauliflower</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 floweret (13 g)</td>
+                    <td data-label="Calories">3 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Celery</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 stalk (40 g)</td>
+                    <td data-label="Calories">6 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chard</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 leaf (48 g)</td>
+                    <td data-label="Calories">9 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cherry Tomato</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cherry tomato (20 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicory</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 head (53 g)</td>
+                    <td data-label="Calories">38 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chinese Cabbage</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 head (840 g)</td>
+                    <td data-label="Calories">134 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chives</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 tbsp, chopped (3 g)</td>
+                    <td data-label="Calories">1 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Collard Greens</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup, raw (36 g)</td>
+                    <td data-label="Calories">12 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Corn</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup (154 g)</td>
+                    <td data-label="Calories">562 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Courgette</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 courgette (196 g)</td>
+                    <td data-label="Calories">33 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Creamed Spinach</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup (200 g)</td>
+                    <td data-label="Calories">148 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cucumber</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cucumber (410 g)</td>
+                    <td data-label="Calories">66 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Eggplant</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 eggplant (458 g)</td>
+                    <td data-label="Calories">115 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Endive</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 head (513 g)</td>
+                    <td data-label="Calories">87 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Fennel</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 bulb (234 g)</td>
+                    <td data-label="Calories">73 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Garlic</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 clove (3 g)</td>
+                    <td data-label="Calories">4 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Gherkin</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 gherkin (65 g)</td>
+                    <td data-label="Calories">9 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Gourd</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 gourd (771 g)</td>
+                    <td data-label="Calories">108 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Green Beans</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup (110 g)</td>
+                    <td data-label="Calories">34 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Green Olives</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 olive (2.7 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Green Onion</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 green onion (15 g)</td>
+                    <td data-label="Calories">5 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Horseradish</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 tbsp (15 g)</td>
+                    <td data-label="Calories">7 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Kale</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup, chopped (67 g)</td>
+                    <td data-label="Calories">33 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Kohlrabi</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 kohlrabi (400 g)</td>
+                    <td data-label="Calories">108 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Kumara</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 kumara (130 g)</td>
+                    <td data-label="Calories">112 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Leek</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 leek (89 g)</td>
+                    <td data-label="Calories">54 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lettuce</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 head (600 g)</td>
+                    <td data-label="Calories">90 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mushrooms</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 mushroom (5.4 g)</td>
+                    <td data-label="Calories">1 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mustard Greens</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup, chopped (56 g)</td>
+                    <td data-label="Calories">15 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Nori</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 sheet (2.6 g)</td>
+                    <td data-label="Calories">1 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Okra</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 pod (12 g)</td>
+                    <td data-label="Calories">4 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Olives</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 olive (2.7 g)</td>
+                    <td data-label="Calories">2 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Onion</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 onion (85 g)</td>
+                    <td data-label="Calories">34 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Parsnips</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 parsnip (170 g)</td>
+                    <td data-label="Calories">128 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Peas</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 cup (98 g)</td>
+                    <td data-label="Calories">79 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="NameName">Pepper</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 pepper (75 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Potato</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 potato (213 g)</td>
+                    <td data-label="Calories">164 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pumpkin</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 pumpkin (196 g)</td>
+                    <td data-label="Calories">51 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Radishes</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 radish (4.5 g)</td>
+                    <td data-label="Calories">1 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Red Cabbage</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 leaf (22 g)</td>
+                    <td data-label="Calories">7 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Rutabaga</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 rutabaga (386 g)</td>
+                    <td data-label="Calories">147 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Shallots</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 shallot (25 g)</td>
+                    <td data-label="Calories">18 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="NameName">Spinach</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 bunch (340 g)</td>
+                    <td data-label="Calories">78 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Squash</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 squash (196 g)</td>
+                    <td data-label="Calories">88 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sweet Potato</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 potato (130 g)</td>
+                    <td data-label="Calories">112 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tomato</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 tomato (111 g)</td>
+                    <td data-label="Calories">20 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turnip Greens</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 turnip green (170 g)</td>
+                    <td data-label="Calories">34 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turnips</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 turnip (122 g)</td>
+                    <td data-label="Calories">34 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Wasabi</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 root (169 g)</td>
+                    <td data-label="Calories">184 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="NameName">Winter Squash</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 squash (431 g)</td>
+                    <td data-label="Calories">147 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Zucchini</td>
+                    <td data-label="Catogory">Vegetable</td>
+                    <td data-label="Quantity">1 zucchini (196 g)</td>
+                    <td data-label="Calories">33 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Almond Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Apricot Kernel Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Argan Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">125 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Avocado Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Babassu Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Canola Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Coconut Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Corn Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (15 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cottonseed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Flaxseed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Grape Seed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Hazelnut Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Linseed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">117 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Menhaden Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">128 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mustard Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Oat Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Olive Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (15 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Palm Kernel Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Palm Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Peanut Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Poppy Seed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pumpkin Seed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Rice Bran Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Safflower Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Salmon Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">128 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sesame Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Shea Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Soy Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sunflower Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tomato Seed Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Vegetable Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (15 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Walnut Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">124 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Wheat Germ Oil</td>
+                    <td data-label="Catogory">Vegetable oils</td>
+                    <td data-label="Quantity">1 tbsp (14 ml)</td>
+                    <td data-label="Calories">130 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Alligator</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 serving (153 g)</td>
+                    <td data-label="Calories">355 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beef</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (164 g)</td>
+                    <td data-label="Calories">407 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beef Brisket</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 piece (1780 g)</td>
+                    <td data-label="Calories">4308 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beef Jerky</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 piece (20 g)</td>
+                    <td data-label="Calories">82 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beef Ribs</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 piece (225 g)</td>
+                    <td data-label="Calories">536 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Beef Tenderloin</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (140 g)</td>
+                    <td data-label="Calories">305 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1/2 chicken (334 g)</td>
+                    <td data-label="Calories">731 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Breast</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 breast (200 g)</td>
+                    <td data-label="Calories">344 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Drumstick</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 drumstick (71 g)</td>
+                    <td data-label="Calories">131 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Fat</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 cup (205 g)</td>
+                    <td data-label="Calories">1841 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Giblets</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 cup (145 g)</td>
+                    <td data-label="Calories">229 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Gizzards</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 cup (145 g)</td>
+                    <td data-label="Calories">212 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Leg</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 leg (199 g)</td>
+                    <td data-label="Calories">346 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Liver</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 liver (44 g)</td>
+                    <td data-label="Calories">73 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Meat</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 breast (200 g)</td>
+                    <td data-label="Calories">344 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Thigh</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 thigh (111 g)</td>
+                    <td data-label="Calories">254 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chicken Wing</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 wing (29 g)</td>
+                    <td data-label="Calories">77 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chuck Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (310 g)</td>
+                    <td data-label="Calories">859 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cubed Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 serving (165 g)</td>
+                    <td data-label="Calories">328 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Duck</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1/2 duck (634 g)</td>
+                    <td data-label="Calories">2137 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Filet Mignon</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 fillet (104 g)</td>
+                    <td data-label="Calories">278 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Flank Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (188 g)</td>
+                    <td data-label="Calories">365 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Flat Iron Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (252 g)</td>
+                    <td data-label="Calories">345 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Ground Beef</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 patty (70 g)</td>
+                    <td data-label="Calories">172 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Ground Round</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 piece (113 g)</td>
+                    <td data-label="Calories">278 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Ham</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 slice (145 g)</td>
+                    <td data-label="Calories">236 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">New York Strip Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (214 g)</td>
+                    <td data-label="Calories">426 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Ostrich</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 serving (85 g)</td>
+                    <td data-label="Calories">123 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 chop (185 g)</td>
+                    <td data-label="Calories">363 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Baby Back Ribs</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 rib (70 g)</td>
+                    <td data-label="Calories">148 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Chops</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 chop (131 g)</td>
+                    <td data-label="Calories">257 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Country-Style Ribs</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 rib (60 g)</td>
+                    <td data-label="Calories">148 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Loin</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 chop (83 g)</td>
+                    <td data-label="Calories">169 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Roast</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 roast (830 g)</td>
+                    <td data-label="Calories">2108 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pork Steaks</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (264 g)</td>
+                    <td data-label="Calories">517 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Roast Beef</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 roast (515 g)</td>
+                    <td data-label="Calories">721 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Round Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (236 g)</td>
+                    <td data-label="Calories">430 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Schnitzel</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 schnitzel (130 g)</td>
+                    <td data-label="Calories">203 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Spare Ribs</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 rack (1400 g)</td>
+                    <td data-label="Calories">3332 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Standing Rib Roast</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 serving (113 g)</td>
+                    <td data-label="Calories">376 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">T-Bone Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (287 g)</td>
+                    <td data-label="Calories">580 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turkey</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 turkey (3812 g)</td>
+                    <td data-label="Calories">7205 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turkey Breast</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1/2 breast (864 g)</td>
+                    <td data-label="Calories">1166 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turkey Legs</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 leg (546 g)</td>
+                    <td data-label="Calories">1136 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turkey Steak</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 steak (170 g)</td>
+                    <td data-label="Calories">321 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turkey Wings</td>
+                    <td data-label="Catogory">Meat</td>
+                    <td data-label="Quantity">1 wing (24 g)</td>
+                    <td data-label="Calories">53 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Anchovy</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">111 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Bluefish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (117 g)</td>
+                    <td data-label="Calories">186 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Bream</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 serving (125 g)</td>
+                    <td data-label="Calories">169 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Butterfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (25 g)</td>
+                    <td data-label="Calories">47 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Calamari</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 piece (12 g)</td>
+                    <td data-label="Calories">21 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Carp</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (170 g)</td>
+                    <td data-label="Calories">275 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Caviar</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 tbsp (16 g)</td>
+                    <td data-label="Calories">42 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Clam</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">126 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cod</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (180 g)</td>
+                    <td data-label="Calories">189 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Crawfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 crawfish (12 g)</td>
+                    <td data-label="Calories">10 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Crayfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">74 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Eel</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 oz. (28.4 g)</td>
+                    <td data-label="Calories">66 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Fish Fingers</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 stick (28 g)</td>
+                    <td data-label="Calories">81 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Fish Sticks</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 stick (28 g)</td>
+                    <td data-label="Calories">81 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Flounder</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (127 g)</td>
+                    <td data-label="Calories">109 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Grouper</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (202 g)</td>
+                    <td data-label="Calories">238 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Haddock</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (150 g)</td>
+                    <td data-label="Calories">135 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Hake</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (113 g)</td>
+                    <td data-label="Calories">80 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Halibut</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (200 g)</td>
+                    <td data-label="Calories">222 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Herring</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (143 g)</td>
+                    <td data-label="Calories">290 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Hoki</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 serving (70 g)</td>
+                    <td data-label="Calories">85 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Kipper</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (40 g)</td>
+                    <td data-label="Calories">87 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Ling</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (151 g)</td>
+                    <td data-label="Calories">165 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lobster</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 lobster (150 g)</td>
+                    <td data-label="Calories">134 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mackerel</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (88 g)</td>
+                    <td data-label="Calories">231 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Milkfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">162 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Monkfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">82 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mullet</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (93 g)</td>
+                    <td data-label="Calories">140 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mussel</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">146 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Octopus</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">139 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pickerel</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (127 g)</td>
+                    <td data-label="Calories">141 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pickled Herring</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 cup (140 g)</td>
+                    <td data-label="Calories">367 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pike</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (155 g)</td>
+                    <td data-label="Calories">175 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Plaice</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 serving (100 g)</td>
+                    <td data-label="Calories">91 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pollack</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (151 g)</td>
+                    <td data-label="Calories">168 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Red Snapper</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (170 g)</td>
+                    <td data-label="Calories">218 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Redfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 serving (57 g)</td>
+                    <td data-label="Calories">54 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Rollmops</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 rollmops (65 g)</td>
+                    <td data-label="Calories">111 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Salmon</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (178 g)</td>
+                    <td data-label="Calories">367 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sardines</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 cup (149 g)</td>
+                    <td data-label="Calories">310 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Scallops</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 scallop (10 g)</td>
+                    <td data-label="Calories">11 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Scampi</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 scampi (10 g)</td>
+                    <td data-label="Calories">8 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sea Bass</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (124 g)</td>
+                    <td data-label="Calories">154 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Shad</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (144 g)</td>
+                    <td data-label="Calories">363 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Shark</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">111 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Smelt</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">3 oz. (85 g)</td>
+                    <td data-label="Calories">105 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sole</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (127 g)</td>
+                    <td data-label="Calories">109 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Squid</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 oz. (28.4 g)</td>
+                    <td data-label="Calories">26 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sturgeon</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 cup (136 g)</td>
+                    <td data-label="Calories">184 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sushi</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 piece (26 g)</td>
+                    <td data-label="Calories">39 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Swordfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 piece (106 g)</td>
+                    <td data-label="Calories">182 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Triggerfish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 oz. (28.4 g)</td>
+                    <td data-label="Calories">26 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Trout</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (62 g)</td>
+                    <td data-label="Calories">118 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tuna</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (154 g)</td>
+                    <td data-label="Calories">203 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tuna Salad</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 cup (205 g)</td>
+                    <td data-label="Calories">383 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Turbot</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1/2 fillet (159 g)</td>
+                    <td data-label="Calories">194 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Wahoo</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 serving (100 g)</td>
+                    <td data-label="Calories">167 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Whitefish</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (154 g)</td>
+                    <td data-label="Calories">265 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Whiting</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (72 g)</td>
+                    <td data-label="Calories">84 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Zander</td>
+                    <td data-label="Catogory">Fish-Seafoods</td>
+                    <td data-label="Quantity">1 fillet (62 g)</td>
+                    <td data-label="Calories">52 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Acai Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">139 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Aloe Vera</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">106 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Apple Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">110 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Apricot Nectar</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">134 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Banana Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Blackberry Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">115 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Boysenberry Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">130 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Capri-Sun</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">1 capri-sun (200 ml)</td>
+                    <td data-label="Calories">82 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Carrot Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">96 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Chamomile Tea</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">0 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cherry Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">108 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Clamato</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">144 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Coconut Milk</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">559 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Coconut Water</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">46 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Concord Grape</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">170 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cranberry Apple Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">161 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cranberry Grape Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">170 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cranberry Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">110 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Cucumber Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">24 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Currant Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">115 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Energy-Drink</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">12 fl. oz. (355 ml)</td>
+                    <td data-label="Calories">309 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Fruitopia</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">264 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Grape Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">144 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Grapefruit Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">110 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lemon Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">50 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lemonade</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Lime Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">50 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Limeade</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">307 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Mango Lassi</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">158 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Nestea</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">50 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Orange Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">110 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Papaya Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">139 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Passion Fruit Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">115 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Peach Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">130 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Peach Nectar</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">130 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pear Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">144 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pear Nectar</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">144 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pineapple Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">127 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pineapple Orange Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">120 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Plum Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">170 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Pomegranate Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">158 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Sauerkraut Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">34 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tangerine Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">103 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Tomato Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">41 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">Vegetable Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">50 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    <tr>
+                    <td data-label="Name">White Grape Juice</td>
+                    <td data-label="Catogory">Fruit Juices</td>
+                    <td data-label="Quantity">8 fl. oz. (240 ml)</td>
+                    <td data-label="Calories">180 cal</td>
+                    <td><input data-label="Select" type="checkbox" name="check-tab1"></td>
+                    </tr>
+                    </tbody></table>
+                </div>
+
+
+
+
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+
+      <div style="color: white;margin-top: 75px;">
+        Total Calories you consumed :
+        <input type="text" name="name" id="txtSum" disabled /></div>
+        <br>
+
+        <input id="btnEditForAddorg" style="width: 200px;font-size: 17px;font-family: Arial, Helvetica, sans-serif;border-radius: 20px;margin: 8px;height: 50px;border: none;color:white;background-color: rgba(80, 255, 71, 0.345);float: right;" type="button" value="Get Total Calories " runat="server" class="btncss2" />
+
+    
+<div class="result">
+    <form onclick="tab1_To_tab1();" >
+
+
+        <div class="table-wrapper">
+            <table id="table2" class="fl-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Calories</th>
+                        <th>Select</th>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+
+
+    </form>
+
+        <div class="tab tab-btn">
+            <button style="width: 200px;font-size: 17px;font-family: Arial, Helvetica, sans-serif;border-radius: 20px;margin: 8px;height: 50px;border: none;color:white;background-color: rgba(255, 25, 25, 0.345); float: right;" onclick="tab2_To_tab1();">Remove Selected Foods</button>
+        </div>
+    
+</div>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[id*=btnEditForAddorg]').on("click", function () {
+                var grid = document.getElementById("table2");
+                var rows = grid.getElementsByTagName("TR");
+                var amount = 0;
+                for (var i = 1; i < rows.length; i++) {
+                    var cells = rows[i].getElementsByTagName("TD");
+                    amount += parseFloat(cells[3].innerHTML);
+                }
+                $('[id*=txtSum]').val(amount);
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<script>
+function mysrhFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+            
+        function tab1_To_tab2()
+        {
+            var table1 = document.getElementById("table1"),
+                table2 = document.getElementById("table2"),
+                checkboxes = document.getElementsByName("check-tab1");
+        console.log("Val1 = " + checkboxes.length);
+             for(var i = 0; i < checkboxes.length; i++)
+                 if(checkboxes[i].checked)
+                    {
+                        // create new row and cells
+                        var newRow = table2.insertRow(table2.length),
+                            cell1 = newRow.insertCell(0),
+                            cell2 = newRow.insertCell(1),
+                            cell3 = newRow.insertCell(2),
+                            cell4 = newRow.insertCell(3),
+                            cell5 = newRow.insertCell(4);
+                        // add values to the cells
+                        cell1.innerHTML = table1.rows[i+1].cells[0].innerHTML;
+                        cell2.innerHTML = table1.rows[i+1].cells[1].innerHTML;
+                        cell3.innerHTML = table1.rows[i+1].cells[2].innerHTML;
+                        cell4.innerHTML = table1.rows[i+1].cells[3].innerHTML;
+                        cell5.innerHTML = "<input type='checkbox' name='check-tab2'>";
+                       
+                        // remove the transfered rows from the first table [table1]
+                        var index = table1.rows[i+1].rowIndex;
+                        table1.deleteRow(index);
+                        // we have deleted some rows so the checkboxes.length have changed
+                        // so we have to decrement the value of i
+                        i--;
+                       console.log(checkboxes.length);
+                    }
+        }
+        
+        
+        function tab2_To_tab1()
+        {
+            var table1 = document.getElementById("table1"),
+                table2 = document.getElementById("table2"),
+                checkboxes = document.getElementsByName("check-tab2");
+        console.log("Val1 = " + checkboxes.length);
+             for(var i = 0; i < checkboxes.length; i++)
+                 if(checkboxes[i].checked)
+                    {
+                        // create new row and cells
+                        var newRow = table1.insertRow(table1.length),
+                            cell1 = newRow.insertCell(0),
+                            cell2 = newRow.insertCell(1),
+                            cell3 = newRow.insertCell(2),
+                            cell4 = newRow.insertCell(3),
+                            cell5 = newRow.insertCell(4);
+                        // add values to the cells
+                        cell1.innerHTML = table2.rows[i+1].cells[0].innerHTML;
+                        cell2.innerHTML = table2.rows[i+1].cells[1].innerHTML;
+                        cell3.innerHTML = table2.rows[i+1].cells[2].innerHTML;
+                        cell4.innerHTML = table2.rows[i+1].cells[3].innerHTML;
+                        cell5.innerHTML = "<input type='checkbox' name='check-tab1'>";
+                       
+                        // remove the transfered rows from the second table [table2]
+                        var index = table2.rows[i+1].rowIndex;
+                        table2.deleteRow(index);
+                        // we have deleted some rows so the checkboxes.length have changed
+                        // so we have to decrement the value of i
+                        i--;
+                       console.log(checkboxes.length);
+                    }
+        }
+        
+    </script>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+
+
+
+</body>
+</html>
